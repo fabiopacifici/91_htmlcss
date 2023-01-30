@@ -9,3 +9,12 @@ body
   text-align: center;
   border-bottom: 2px solid #ce8d0a;
 }
+h2
+{
+  color: #ce8d0a;
+}
+
+h3
+{
+  font-style: italic;
+}
