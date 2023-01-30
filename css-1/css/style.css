@@ -1,0 +1,32 @@
+ body
+ {
+   font-family: 'Oswald', sans-serif;
+ }
+
+ #title
+ {
+   background-color: red;
+ }
+
+ .bot
+ {
+   color: purple;
+   background-color: yellow;
+ }
+
+ p
+ {
+   color: green;
+ }
+
+ #lead
+ {
+   color: yellow;
+ }
+
+ #wheel
+ {
+   color: white;
+   background-image: url('../0.jpg');
+
+ }
