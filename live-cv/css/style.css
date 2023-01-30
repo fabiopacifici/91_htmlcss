@@ -9,6 +9,11 @@ body
   text-align: center;
   border-bottom: 2px solid #ce8d0a;
 }
+#app-main
+{
+  width: 70%;
+  margin: auto;
+}
 h2
 {
   color: #ce8d0a;
@@ -17,4 +22,14 @@ h2
 h3
 {
   font-style: italic;
+}
+#app-footer
+{
+  text-align: center;
+  border-top: 2px solid #ce8d0a;
+}
+
+.avatar
+{
+  width: 300px;
 }
