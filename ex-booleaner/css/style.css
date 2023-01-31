@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+table
+{
+  border-spacing: 0;
+}
 /* Utilities */
 .container
 {
@@ -16,6 +20,41 @@
   padding-top: 3rem;
 }
 
+.my-1
+{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.text-sm
+{
+  font-size: 0.75rem;
+}
+
+.bg-blue
+{
+  background-color: cornflowerblue;
+}
+
+.bg-lite-blue
+{
+  background-color: rgb(100, 232, 237);
+}
+
+.w-50
+{
+  width: 50%;
+}
+
+.text-left
+{
+  text-align: left;
+}
+
+.text-white
+{
+  color: white;
+}
 /* Header */
 #app-header
 {
@@ -28,20 +67,34 @@
 h1
 {
   font-size: 3rem;
+}
+
+.metadata
+{
+  color: #acacad
+}
+
+.author
+{
+  color: #4fa1ff;
+  text-decoration: none;
+}
+#monitor
+{
+  background-image: url('../img/monitor.jpg');
+    background-repeat: no-repeat;
   }
   
-  .metadata
+  #graph
   {
-    color: #acacad
+    background-image: url('../img/graph.jpg');
+    background-repeat: no-repeat;
   }
   
-  .author
+  .banner
   {
-    color: #4fa1ff;
-    text-decoration: none;
-  }
-  
-  .date
-  {
-    font-size: 0.75rem;
+    width: 250px;
+    height: 180px;
+    padding: 1rem;
+    color: white;
 }
