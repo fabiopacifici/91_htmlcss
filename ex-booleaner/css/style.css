@@ -1,18 +1,47 @@
-body
+/* Common */
+*
 {
   margin: 0;
 }
 
-header
+/* Utilities */
+.container
+{
+  width: 90%;
+  margin: auto;
+}
+
+.pt-3
+{
+  padding-top: 3rem;
+}
+
+/* Header */
+#app-header
 {
   background-color: #4fa1ff;
   background-image: url('../img/pattern.png');
   background-size: 20%;
 }
 
-.logo
+/* Main */
+h1
 {
-  padding-top: 3rem;
-  width: 90%;
-  margin: auto;
+  font-size: 3rem;
+  }
+  
+  .metadata
+  {
+    color: #acacad
+  }
+  
+  .author
+  {
+    color: #4fa1ff;
+    text-decoration: none;
+  }
+  
+  .date
+  {
+    font-size: 0.75rem;
 }
