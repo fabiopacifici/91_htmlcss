@@ -1,0 +1,18 @@
+body
+{
+  margin: 0;
+}
+
+header
+{
+  background-color: #4fa1ff;
+  background-image: url('../img/pattern.png');
+  background-size: 20%;
+}
+
+.logo
+{
+  padding-top: 3rem;
+  width: 90%;
+  margin: auto;
+}
