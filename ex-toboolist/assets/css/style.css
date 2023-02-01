@@ -27,6 +27,55 @@ body
 }
 /* #endregion Common */
 
+/* #region Utility Classes */
+
+.container
+{
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.pl-3
+{
+  padding-left: 3rem;
+}
+
+.btn
+{
+  background-color: transparent;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9rem;
+}
+
+.btn-primary
+{
+  background-color: var(--tb-primary);
+  color: var(--tb-ligher);
+}
+
+.btn-outline
+{
+  border: 1px solid var(--tb-shadow);
+  color: var(--tb-shadow);
+}
+
+.card
+{
+  background-color: var(--tb-ligher);
+  padding: 1rem 0;
+  border-radius: 1rem;
+}
+
+.card-header
+{
+
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--tb-light);
+}
+
+/* #endregion Utility Classes */
 /* #region Header */
 #app-header
 {
