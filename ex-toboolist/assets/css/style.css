@@ -1,0 +1,25 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root
+{
+  --tb-light: #f7f8f8;
+  --tb-ligher: #ffffff;
+  --tb-dark: #051930;
+  --tb-primary: #46adf0;
+  --tb-goals: #9d72e5;
+  --tb-recruiting: #64c1a8;
+  --tb-mobile: #f29e33;
+  --tb-website: #d962a1;
+  --tb-sales: #b1c927;
+}
+
+body
+{
+  background-color: var(--tb-light);
+  font-family: Arial, Helvetica, sans-serif;
+}
