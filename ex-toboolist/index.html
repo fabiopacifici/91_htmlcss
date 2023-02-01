@@ -12,26 +12,74 @@
 <body>
 
   <header id="app-header">
+
     <div class="logo">
       <img class="logo_icon" src="./assets/img/logo.png" alt="logo boolean">
       <strong class="logo_text">Toboolist</strong>
+
     </div>
   </header>
   <!-- /#app-header -->
   <main id="app-main">
-    <div class="container">
+    <div class="container my-2">
       <div class="card">
         <div class="card-header pl-3">
           <button class="btn btn-primary">Add Task</button>
           <button class="btn btn-outline">Add Section</button>
-  
+
         </div>
-        <div class="card-body pl-3"></div>
+        <div class="card-body pl-3 py-2">
+        
+          <section id="new_tasks">
+            <h3 class="mb-1"><span>&dtrif;</span>New Task</h3>
+            <ul class="list-unstyled">
+              <li><span class="icon check">&check;</span>Quarterly Newsletter <span class="badge bg-editorial">Editorial</span>
+              </li>
+            </ul>
+          </section>
+          <!-- /#new_tasks -->
+          <section id="today">
+            <h3 class="mb-1"><span>&dtrif;</span>Tpday</h3>
+            <ul class="list-unstyled">
+              <li><span class="icon check">&check;</span>Quarterly Newsletter <span class="badge bg-editorial">Editorial</span>
+              </li>
+              <li><span class="icon cross">&cross;</span>Quarterly Newsletter <span class="badge bg-goals">Q1
+                  Goals</span>
+              </li>
+              <li><span class="icon check">&check;</span>Quarterly Newsletter <span
+                  class="badge bg-recruiting">Recruiting</span>
+              </li>
+              <li><span class="icon check">&check;</span>Quarterly Newsletter <span class="badge bg-mobile">Mobile</span>
+              </li>
+            </ul>
+          </section>
+          <!-- /#today -->
+          <section id="upcoming">
+            <h3 class="mb-1"><span>&dtrif;</span>Upcoming</h3>
+            <ul class="list-unstyled">
+              <li><span class="icon cross">&cross;</span>Quarterly Newsletter
+              </li>
+              <li><span class="icon check">&check;</span>Quarterly Newsletter <span class="badge bg-website">Websites</span>
+              </li>
+              <li><span class="icon check">&check;</span>Quarterly Newsletter <span class="badge bg-sales">Sales</span>
+              </li>
+              <li><span class="icon check">&check;</span>Quarterly Newsletter <span class="badge bg-mobile">Mobile</span>
+              </li>
+            </ul>
+          </section>
+          <!-- /#upcoming -->
+        </div>
       </div>
     </div>
   </main>
   <!-- /#app-main -->
-  <footer id="app-footer"></footer>
+  <footer id="app-footer">
+    <div class="container">
+      <p>
+        copyright &copy; Boolean 2023
+      </p>
+    </div>
+  </footer>
   <!-- /#app-footer -->
 
 </body>

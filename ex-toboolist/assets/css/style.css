@@ -18,12 +18,17 @@
   --tb-mobile: #f29e33;
   --tb-website: #d962a1;
   --tb-sales: #b1c927;
+  --tb-danger: red;
 }
 
 body
 {
   background-color: var(--tb-light);
   font-family: Arial, Helvetica, sans-serif;
+}
+li
+{
+  padding-bottom: 0.75rem;
 }
 /* #endregion Common */
 
@@ -32,14 +37,29 @@ body
 .container
 {
   width: 80%;
-  margin: 2rem auto;
+  margin: auto;
 }
 
 .pl-3
 {
   padding-left: 3rem;
 }
+.py-2
+{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 
+.mb-1
+{
+  margin-bottom: 1rem;
+}
+
+.my-2
+{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .btn
 {
   background-color: transparent;
@@ -74,12 +94,59 @@ body
   padding-bottom: 1rem;
   border-bottom: 2px solid var(--tb-light);
 }
+.list-unstyled
+{
+  list-style: none;
+}
 
+.badge
+{
+  font-size: 0.75rem;
+  border-radius: 1rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Colors */
+.bg-editorial
+{
+  background-color: var(--tb-primary);
+  color: var(--tb-ligher)
+}
+
+.bg-goals
+{
+  background-color: var(--tb-goals);
+  color: var(--tb-ligher)
+}
+
+.bg-recruiting
+{
+  background-color: var(--tb-recruiting);
+  color: var(--tb-ligher)
+}
+
+.bg-mobile
+{
+  background-color: var(--tb-mobile);
+  color: var(--tb-ligher)
+}
+
+.bg-website
+{
+  background-color: var(--tb-website);
+  color: var(--tb-ligher)
+}
+
+.bg-sales
+{
+  background-color: var(--tb-sales);
+  color: var(--tb-ligher)
+}
 /* #endregion Utility Classes */
 /* #region Header */
 #app-header
 {
-  padding: 0.5rem 2rem;
+  padding: 0.75rem 2rem;
   height: 60px;
   background-color: var(--tb-ligher);
   box-shadow: 0 0 10px var(--tb-shadow);
@@ -104,3 +171,28 @@ body
 }
 
 /* #endregion Header */
+/* Main */
+
+.icon
+{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  font-size: 0.65rem;
+  margin-right: 0.5rem;
+}
+
+.check
+{
+  border: 1px solid var(--tb-recruiting);
+  color: var(--tb-recruiting)
+}
+
+.cross
+{
+  border: 1px solid var(--tb-danger);
+  color: var(--tb-danger)
+}
