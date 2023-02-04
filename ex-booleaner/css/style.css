@@ -1,7 +1,12 @@
+html
+{
+  font-size: 20px;
+}
 /* Common */
 *
 {
   margin: 0;
+  padding: 0;
 }
 
 table
@@ -24,6 +29,10 @@ table
 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.ml-1
+{
+  margin-left: 1rem;
 }
 
 .text-sm
@@ -62,7 +71,10 @@ table
   background-image: url('../img/pattern.png');
   background-size: 20%;
 }
-
+.logo
+{
+  width: 140px;
+}
 /* Main */
 h1
 {
@@ -97,4 +109,11 @@ h1
     height: 180px;
     padding: 1rem;
     color: white;
+}
+/* Footer */
+
+#app-footer
+{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
