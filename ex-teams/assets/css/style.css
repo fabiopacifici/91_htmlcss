@@ -1,0 +1,157 @@
+/* #region Common Rules */
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root
+{
+  --tm-dark: #051930;
+  --tm-light: white;
+  --tm-primary: #d962a1;
+  --tm-secondary: #45abea;
+
+}
+
+h1
+{
+  font-family: 'Fredoka One', cursive;
+  color: var(--tm-primary);
+  padding-bottom: 2rem;
+}
+
+body
+{
+  font-family: 'Fredoka', sans-serif;
+}
+
+img
+{
+  max-width: 100%;
+}
+
+/* #endregion Common Rules */
+
+/* #region Debug */
+.debug > #app-header
+{
+  height: 200px;
+  background-color: pink;
+}
+
+.debug > #app-main
+{
+  height: 800px;
+  background-color: rgb(21, 68, 116);
+}
+
+.debug > #app-footer
+{
+  height: 200px;
+  background-color: pink;
+}
+
+.debug .card
+{
+  height: 120px;
+  background-color: yellow;
+}
+
+.debug .image
+{
+  width: 30%;
+  height: 120px;
+  background-color: red;
+}
+
+.debug .details
+{
+  height: 120px;
+  background-color: blue;
+}
+
+/* #endregion Debug */
+
+/* #region Utilities */
+.container
+{
+  max-width: 1140px;
+  margin: auto;
+}
+
+.row
+{
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.row::after,
+.clearfix::after
+{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.col-4
+{
+  float: left;
+  width: calc((100% / 12) * 4);
+  padding: 1rem;
+}
+
+.left
+{
+  float: left;
+}
+
+.p-1
+{
+  padding: 1rem;
+}
+
+.lead
+{
+  font-size: 1.25rem;
+}
+
+/* #endregion Utilities */
+
+/* #region app-header */
+#app-header
+{
+  padding: 3rem;
+  text-align: center;
+  background-color: var(--tm-dark);
+  color: var(--tm-light)
+}
+
+/* #endregion app-header */
+
+/* Main */
+.card > .image
+{
+  width: calc(100% / 3);
+}
+
+.card
+{
+  background-color: var(--tm-dark);
+  color: white
+}
+
+#app-main
+{
+  margin: 8rem;
+}
+
+/* App Footer */
+
+#app-footer
+{
+  padding: 3rem 0;
+  background-color: var(--tm-dark);
+  color: var(--tm-light)
+}
