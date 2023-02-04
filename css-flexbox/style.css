@@ -1,0 +1,44 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-flex
+{
+  display: flex;
+  background-color: aquamarine;
+  height: 500px;
+}
+
+.item
+{
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
+}
+
+.black
+{
+  width: 100px;
+  aspect-ratio: 1/1;
+  margin: 1rem;
+  background: #000;
+}
+
+.red
+{
+  display: flex;
+  background-color: red;
+}
+
+.green
+{
+  background: green;
+}
+
+.blue
+{
+  background: blue;
+}

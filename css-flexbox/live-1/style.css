@@ -1,0 +1,22 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.red
+{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.d-flex
+{
+  display: flex;
+  height: 500px;
+  background-color: #f5f5dc;
+  justify-content: center;
+  align-items: center;
+}
