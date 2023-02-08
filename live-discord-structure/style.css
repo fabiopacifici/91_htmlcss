@@ -1,0 +1,151 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container
+{
+  width: 70%;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.d-flex
+{
+  display: flex;
+}
+
+.logo,
+.login
+{
+  flex-grow: 1;
+}
+
+.main-menu
+{
+  flex-grow: 4;
+  text-align: center;
+}
+
+.login
+{
+  text-align: end;
+}
+
+section
+{
+  padding: 2rem 0;
+}
+
+/* Debug */
+.debug > header
+{
+  background-color: aquamarine;
+}
+
+.debug .jumbotron
+{
+  background-color: blue;
+  height: 450px;
+}
+
+.debug .jumbo_text
+{
+  height: 100%;
+  min-width: 60%;
+  background-color: green;
+}
+
+.debug .section_image
+{
+  height: 350px;
+  background-color: palevioletred;
+}
+
+.debug .section_text
+{
+  height: 350px;
+  background-color: cornflowerblue;
+}
+
+.debug #reliable .container
+{
+  height: 500px;
+  background-color: green;
+}
+
+.debug #app-footer
+{
+  /* height: 500px; */
+  background-color: #333;
+}
+
+.debug .talk
+{
+  background-color: gainsboro;
+  height: 400px;
+}
+
+.debug .item
+{
+  background-color: aquamarine;
+  border: 1px dashed red;
+}
+
+/* Header */
+#app-header
+{
+  padding: 1rem 0;
+}
+
+/* Main */
+.jumbotron
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+section .section_image
+{
+  width: 60%;
+}
+
+section .section_text
+{
+  width: 40%;
+}
+
+#safe-talk,
+#fandom
+{
+  background-color: gainsboro;
+}
+
+/* Footer */
+
+#app-footer
+{
+  padding: 1rem 0;
+}
+
+#app-footer .talk
+{
+  width: 40%;
+}
+
+.item
+{
+  width: calc(100% / 4);
+}
+
+#app-footer .bottom
+{
+  margin-top: 1rem;
+  border-top: 1px solid gray;
+  padding: 1rem 0;
+  justify-content: space-between;
+}
