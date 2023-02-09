@@ -1,0 +1,32 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container
+{
+  width: 70%;
+  max-width: 1176px;
+  margin: auto
+}
+
+.banner
+{
+  padding: 3rem;
+  background-color: #333;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.banner:hover
+{
+  cursor: pointer;
+  background-color: rgb(12, 12, 58);
+}
+
+.banner:hover h1
+{
+  color: yellow;
+}

@@ -1,0 +1,364 @@
+/* #region Common */
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root
+{
+  --ds-dark: #22272b;
+  --ds-primary: #8ea0e0;
+  --ds-light: #f7f7f6;
+  --ds-lighter: white;
+}
+
+body
+{
+  font-family: 'Poppins', sans-serif
+}
+
+section
+{
+  padding: 2rem 0;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+p
+{
+  line-height: 1.5rem;
+}
+
+/* #endregion Common */
+
+/* #region Debug */
+.debug > header
+{
+  background-color: aquamarine;
+}
+
+.debug .jumbotron
+{
+  background-color: blue;
+
+}
+
+.debug .jumbo_text
+{
+  height: 100%;
+  min-width: 60%;
+  background-color: green;
+}
+
+.debug .section_image
+{
+  height: 350px;
+  background-color: palevioletred;
+}
+
+.debug .section_text
+{
+  height: 350px;
+  background-color: cornflowerblue;
+}
+
+.debug #reliable .container
+{
+  height: 500px;
+  background-color: green;
+}
+
+.debug #app-footer
+{
+  /* height: 500px; */
+  background-color: #333;
+}
+
+.debug .talk
+{
+  background-color: gainsboro;
+  height: 400px;
+}
+
+.debug .item
+{
+  background-color: aquamarine;
+  border: 1px dashed red;
+}
+
+/* #endregion Debug */
+/* #region Utility */
+.container
+{
+  width: 70%;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.container-sm
+{
+  width: 60%;
+  max-width: 840px;
+  margin: auto;
+}
+
+.d-flex
+{
+  display: flex;
+}
+
+.wrap
+{
+  flex-wrap: wrap;
+}
+
+.align-center
+{
+  align-items: center;
+}
+
+.justify-center
+{
+  justify-content: center;
+}
+
+.btn
+{
+  display: inline-block;
+  border-radius: 1.5rem;
+}
+
+.btn-small
+{
+  padding: 0.25rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+.btn-lg
+{
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.btn-light
+{
+  background-color: var(--ds-light);
+  color: var(--ds-dark)
+}
+
+.btn-dark
+{
+  background-color: var(--ds-dark);
+  color: var(--ds-lighter)
+}
+
+.btn-primary
+{
+  background-color: var(--ds-primary);
+  color: var(--ds-lighter);
+}
+
+.text-center
+{
+  text-align: center;
+}
+
+.w-60
+{
+  width: 60%;
+}
+
+.w-40
+{
+  width: 40%;
+}
+
+.mb-1
+{
+  margin-bottom: 1rem;
+}
+
+/* #endregion Utility */
+
+/* #region Header */
+#app-header
+{
+  padding: 1rem 0;
+  background-color: #255ee8;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* 
+  background-image: url('./img/jumbo.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
+ */
+}
+
+.logo,
+.login
+{
+  flex-grow: 1;
+}
+
+.main-menu
+{
+  flex-grow: 4;
+  text-align: center;
+}
+
+.login
+{
+  text-align: end;
+}
+
+ul.list-inline
+{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+.main-menu a
+{
+  color: white;
+}
+
+.jumbotron
+{
+  background-image: url('./img/jumbo.png');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.jumbotron h1
+{
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  color: var(--ds-lighter);
+
+}
+
+.jumbotron p
+{
+  color: var(--ds-lighter);
+}
+
+.jumbotron .call-to-action
+{
+  margin-top: 2rem;
+}
+
+/* #endregion Header */
+/* #region Main */
+#app-main
+{
+  margin-top: 74px;
+}
+
+section .section_text > h2
+{
+  font-size: 2.5rem;
+  margin: 1.5rem 0;
+}
+
+#safe-talk,
+#fandom
+{
+  background-color: var(--ds-lighter);
+}
+
+#easy-meetings,
+#reliable
+{
+  background-color: var(--ds-light);
+}
+
+.wave-top
+{
+  color: var(--ds-light);
+  margin-bottom: -10px;
+}
+
+.wave-bottom
+{
+  color: var(--ds-light);
+  margin-top: -10px;
+  rotate: 180deg
+}
+
+/* #endregion Main */
+
+/* #region Footer */
+
+#app-footer
+{
+  padding: 1rem 0;
+  background-color: var(--ds-dark);
+  color: var(--ds-lighter);
+}
+
+#app-footer .talk
+{
+  width: 40%;
+}
+
+.item
+{
+  width: calc(100% / 4);
+}
+
+#app-footer ul
+{
+  list-style: none;
+}
+
+#app-footer h3,
+#app-footer h4
+{
+  color: var(--ds-primary);
+
+}
+
+#app-footer .bottom
+{
+  margin-top: 1rem;
+  border-top: 1px solid gray;
+  padding: 1rem 0;
+  justify-content: space-between;
+}
+
+#app-footer .language
+{
+  font-size: 14px;
+  margin: 1.5rem 0;
+}
+
+.language > span
+{
+  margin: 0 0.5rem;
+}
+
+.social
+{
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* #endregion Footer */
