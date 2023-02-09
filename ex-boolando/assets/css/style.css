@@ -1,0 +1,252 @@
+/* Common */
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root
+{
+  --bd-dark: #1a1a1a;
+  --bd-primary: #fe6800;
+  --bd-lighter: #ffffff;
+  --bd-alert: red;
+  --bd-success: green;
+}
+
+body
+{
+  font-family: 'Poppins', sans-serif
+}
+
+a
+{
+  text-decoration: none;
+}
+
+img
+{
+  max-width: 100%;
+}
+
+/* Debug */
+
+.debug .product
+{
+  background-color: red;
+}
+
+/* Utilities */
+.container
+{
+  width: 70%;
+  max-width: 1152px;
+  margin: auto;
+}
+
+.row
+{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+.col-4
+{
+  width: calc(100% / 12 * 4);
+  padding: 1rem;
+}
+
+.col-6
+{
+  width: calc(100% / 12 * 6);
+  padding: 1rem;
+}
+
+.d-flex
+{
+  display: flex;
+}
+
+.list-inline
+{
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.text-end
+{
+  text-align: end;
+}
+
+.justify-content-between
+{
+  justify-content: space-between;
+}
+
+/* Header */
+#app-header
+{
+  background-color: var(--bd-primary);
+  padding: 1rem 0;
+  color: var(--bd-lighter);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  height: var(--bd-header-height);
+}
+
+.left-menu,
+.right-menu
+{
+  width: 40%;
+}
+
+.logo
+{
+  width: 20%;
+  text-align: center;
+}
+
+.logo > img
+{
+  height: 30px;
+}
+
+.right-menu > ul
+{
+  justify-content: flex-end;
+}
+
+nav
+{
+  align-items: center;
+}
+
+nav a
+{
+  color: var(--bd-lighter);
+}
+
+nav a:hover
+{
+  font-weight: bold;
+}
+
+/* Main */
+
+.banner
+{
+  padding: 2rem;
+  background-color: var(--bd-dark);
+  color: var(--bd-lighter);
+  margin-bottom: 2rem;
+}
+
+.product
+{
+  box-shadow: 0 0 10px lightgray;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.product .img-back
+{
+  display: none;
+}
+
+.product:hover .img-front
+{
+  display: none;
+}
+
+.product:hover .img-back
+{
+  display: inline-block;
+}
+
+.product > .top
+{
+  position: relative;
+}
+
+.product .like
+{
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  background-color: var(--bd-lighter);
+  padding: 1rem;
+}
+
+.product .badges
+{
+  font-size: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 2rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.badges > .discount,
+.badges > .info
+{
+  color: white;
+  padding: 0.25rem 0.75rem;
+}
+
+.badges > .discount
+{
+  background-color: var(--bd-alert);
+}
+
+.badges > .info
+{
+  background-color: var(--bd-success);
+}
+
+.bottom
+{
+  padding: 1rem;
+}
+
+.discounted
+{
+  color: var(--bd-alert);
+}
+
+.original
+{
+  text-decoration: line-through;
+}
+
+/* Footer */
+
+#app-footer
+{
+  padding: 2rem 0;
+  background-color: var(--bd-dark);
+  color: var(--bd-lighter);
+}
+
+#app-footer a
+{
+  color: white;
+  font-size: 0.8rem;
+}
+
+#app-footer a:hover
+{
+  font-size: 0.9rem;
+}
+
+.like:hover i
+{
+  color: var(--bd-alert);
+  cursor: pointer;
+}
