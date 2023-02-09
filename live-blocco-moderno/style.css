@@ -1,0 +1,93 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+img
+{
+  max-width: 100%;
+}
+
+/* 
+https://static2-viaggi.corriereobjects.it/wp-content/uploads/2015/06/roma-getty.jpg?v=133898
+
+https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Milan_Cathedral_from_Piazza_del_Duomo.jpg/640px-Milan_Cathedral_from_Piazza_del_Duomo.jpg
+
+https://tourismmedia.italia.it/is/image/mitur/1600X1000_itinerario_diecimila_passi_napoli_hero?qlt=82&ts=1665991935953&dpr=off
+*/
+
+section
+{
+  height: 100vh;
+  position: relative;
+}
+
+section h2
+{
+  font-size: 3rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+  text-transform: uppercase;
+}
+
+#roma
+{
+  background-image: url('https://static2-viaggi.corriereobjects.it/wp-content/uploads/2015/06/roma-getty.jpg?v=133898');
+}
+
+#napoli
+{
+  background-image: url('https://tourismmedia.italia.it/is/image/mitur/1600X1000_itinerario_diecimila_passi_napoli_hero?qlt=82&ts=1665991935953&dpr=off');
+}
+
+#milano
+{
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Milan_Cathedral_from_Piazza_del_Duomo.jpg/640px-Milan_Cathedral_from_Piazza_del_Duomo.jpg');
+
+}
+
+#roma,
+#milano,
+#napoli
+{
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section::after
+{
+  content: '';
+  display: block;
+  height: 100%;
+  background-color: #0000007d;
+}
+
+nav
+{
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  z-index: 500;
+}
+
+nav a
+{
+  text-decoration: none;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: wheat;
+  line-height: 30px;
+  text-align: center;
+}
