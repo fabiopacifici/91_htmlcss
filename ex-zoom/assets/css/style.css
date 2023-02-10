@@ -1,0 +1,129 @@
+/* #region Common */
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root
+{
+  --z-dark: #4b4b4a;
+  --z-dark-trasparent: #4b4b4ab0;
+  --z-darker: #222222;
+  --z-light: white;
+  --z-danger: red;
+  --z-success: #4ac901;
+}
+
+body
+{
+  background-color: var(--z-darker);
+}
+
+img
+{
+  max-width: 100%;
+}
+
+/* #endregion Common */
+
+/* #region Utilities */
+.btn
+{
+  background-color: var(--z-dark);
+  color: var(--z-light);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  border-width: 0;
+  margin: 0.25rem;
+}
+
+.text-green
+{
+  color: var(--z-success);
+}
+
+/* #endregion Utilities */
+
+/* header */
+#app-header
+{
+  height: 50px;
+  text-align: end;
+}
+
+/* Main */
+#app-main
+{
+  height: calc(100vh - 120px);
+}
+
+.partecipants
+{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.partecipant
+{
+  position: relative;
+  width: 250px;
+  height: 150px;
+}
+
+.name
+{
+  position: absolute;
+  left: 0;
+  bottom: 0.25rem;
+  background-color: var(--z-dark-trasparent);
+  color: var(--z-light);
+  padding: 0.25rem
+}
+
+/* Footer */
+#app-footer
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--z-light);
+  background-color: var(--z-dark);
+  height: 70px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right
+{
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  height: 100%;
+
+}
+
+footer .icon
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .icon > span
+{
+  font-size: 0.8rem;
+}
+
+.footer-right button
+{
+  height: 100%;
+  padding: 0 1rem;
+  color: #f00;
+  background: #808080;
+  border: none;
+}
