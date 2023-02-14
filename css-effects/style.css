@@ -1,0 +1,21 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* property name | duration | timing function | delay 
+transition: margin-right 4s ease-in-out 1s;
+*/
+div
+{
+  height: 500px;
+  background-color: red;
+  transition: background-color 0.5s;
+}
+
+div:hover
+{
+  background-color: blue;
+}
