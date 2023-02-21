@@ -1,4 +1,8 @@
 /* #region Common */
+body
+{
+  font-family: 'Open Sans', sans-serif;
+}
 *
 {
   margin: 0;
@@ -6,8 +10,38 @@
   box-sizing: border-box;
 }
 
-body
-{}
+:root
+{
+  --db-primary: #0061ff;
+  --db-light-primary: #b4d0e7;
+  --db-lighter: white;
+  --db-secondary: #dadadd;
+}
+
+img
+{
+  max-width: 100%;
+}
+
+.square
+{
+  width: 200px;
+  aspect-ratio: 1 /1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section h2
+{
+  padding-top: 2rem;
+  font-size: 2.5rem;
+}
+
+ul li
+{
+  margin-bottom: 1rem;
+}
 
 /* #endregion Common */
 
@@ -84,6 +118,10 @@ body
   display: flex;
 }
 
+.content-between
+{
+  justify-content: space-between;
+}
 .container
 {
   max-width: 1152px;
@@ -94,16 +132,6 @@ body
 {
   max-width: 1000px;
   margin: auto;
-}
-
-.w-40
-{
-  width: 40%;
-}
-
-.w-60
-{
-  width: 60%;
 }
 
 .row
@@ -128,6 +156,10 @@ body
   width: calc(100% / 12 * 5);
 }
 
+.col-6
+{
+  width: 50%;
+}
 .col-7
 {
   width: calc(100% / 12 * 7);
@@ -138,13 +170,78 @@ body
   width: 100%;
 }
 
+.w-40
+{
+  width: 40%;
+}
+
+.w-60
+{
+  width: 60%;
+}
+
+.py-2
+{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .pt-2
 {
   padding-top: 2rem;
 }
 
+.btn
+{
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary
+{
+  background-color: var(--db-primary);
+  color: var(--db-lighter);
+}
+
+.btn-block
+{
+  display: block;
+}
+
+.card
+{
+  border: 1px solid var(--db-secondary);
+  min-height: 100%;
+}
+
+.card-header
+{
+  text-align: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--db-secondary);
+}
+
+.card-body
+{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.text-muted
+{
+  color: var(--db-secondary);
+}
+
+ul.list-unstyled
+{
+  list-style: none;
+
+}
 /* #endregion Utilities */
-/* Heaedr */
+/* #region Heaedr */
 #app-header
 {
   height: 70px;
@@ -152,16 +249,39 @@ body
   box-shadow: 0 0 5px gray;
 }
 
+#app-header nav
+{
+  height: 100%;
+  align-items: center;
+  padding: 0 1rem;
+}
 #app-header .menu-left,
 #app-header .menu-right
 {
-  display: flex;
+display: flex;
   list-style: none;
-  gap: 0.25rem;
+gap: 0.5rem;
   flex-grow: 1;
+align-items: center;
 }
 
-/* MAin */
+#app-header .menu-right
+{
+  justify-content: end;
+}
+
+/* #endregion Heaedr */
+/* #region Main */
+.jumbo
+{
+  background-color: var(--db-light-primary);
+}
+
+.jumbo h1
+{
+  font-size: 3rem;
+  padding: 3rem 0;
+}
 
 .jumbo .jumbo_text
 {
@@ -169,9 +289,149 @@ body
   padding-top: 2rem;
 }
 
-/* Footer */
+.jumbo img
+{
+  margin-bottom: -5rem;
+}
+
+.jumbo .w-40
+{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Plans */
+
+#plans
+{
+  padding: 3rem 0;
+}
+
+.plans ul.list-unstyled li
+{
+  display: flex;
+  gap: 0.25rem;
+  align-items: baseline;
+}
+
+/* TODO: rimuovere */
+.plans .call-to-action
+{
+  margin: 2rem 0;
+}
+
+.plans .call-to-action hr
+{
+  width: 100px;
+}
+
+/* Teams */
+.teams
+{
+  background-color: var(--db-secondary);
+}
+
+.teams .row
+{
+  margin: 0 !important;
+}
+
+.teams [class^="col-"]
+{
+  padding: 0 !important;
+}
+
+.teams .team
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #0061ff;
+
+}
+
+.team img
+{
+  width: 60%;
+  filter: invert(1);
+}
+
+.teams .content
+{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* option 2 teams */
+.teams .left,
+.teams .center,
+.teams .right
+{
+  width: calc(100% / 3);
+}
+
+.teams .left,
+.teams .right
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.teams .item
+{
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  background-color: #b4d0e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item > img
+{
+  width: 60%;
+  filter: invert(1);
+}
+
+.teams .item.active
+{
+  box-shadow: inset 0 0 0 10px #0000005c;
+}
+
+/* faqs */
+.faq
+{
+  padding: 1.5rem;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.faq .answer
+{
+  display: none;
+}
+
+.faq:hover .answer
+{
+  display: block;
+}
+
+.faq:hover .question i
+{
+  rotate: 180deg;
+}
+
+/* #endregion Main */
+
+/* #region Footer */
 
 #app-footer .item
 {
   flex-grow: 1;
 }
+/* #endregion Heaedr */

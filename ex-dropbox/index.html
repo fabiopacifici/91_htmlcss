@@ -6,6 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dropbox</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css'
+    integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=='
+    crossorigin='anonymous' referrerpolicy='no-referrer' />
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -14,38 +21,261 @@
   <header id="app-header">
     <nav class="d-flex">
       <ul class="menu-left">
-        <li>item</li>
-        <li>item</li>
-        <li>item</li>
-        <li>item</li>
+        <li class="logo">
+          <a href="/">
+            <img src="./assets/img/logo-small.png" alt="">
+          </a>
+        </li>
+        <li>Perché dropbox</li>
+        <li>Funzioni</li>
+        <li>Piani e prezzi</li>
       </ul>
+      <!-- /.menu-left" -->
       <ul class="menu-right">
-        <li>item</li>
-        <li>item</li>
-        <li>item</li>
-        <li>item</li>
+        <li>Supporto</li>
+        <li>Contatta l'uifficio Vendite</li>
+        <li>Accedi</li>
+        <li>
+          <a href="#" class="btn btn-primary">
+            Inizia
+          </a>
+        </li>
       </ul>
+      <!-- /.menu-right -->
     </nav>
   </header>
   <!-- /#app-header -->
   <main id="app-main">
     <section class="jumbo">
       <div class="container">
-        <h1></h1>
+        <h1>Tutto cio che ti server per il lavoro, in un unico posto</h1>
         <div class="jumbo_text d-flex">
-          <div class="w-40"></div>
-          <div class="w-60"></div>
+          <div class="w-40">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod architecto aperiam nobis, porro ab odio
+              nihil!
+              Repudiandae, dolorem? Quod quaerat nemo rem repellat eos, sequi ut possimus voluptas a dicta?
+            </p>
+          
+            <div class="call-to-action">
+              <a href="" class="btn btn-primary">
+                Inizia la tua prova gratuita
+              </a>
+          
+            </div>
+          
+            <div>
+              Annulla in qualsiasi momento
+            </div>
+          
+            <a href="#plans">
+              <i class="fas fa-arrow-down fa-2x fa-fw"></i>
+            </a>
+          </div>
+          <div class="w-60">
+            <img src="./assets/img/jumbo.png" alt="">
+          </div>
         </div>
       </div>
     </section>
     <!-- /.jumbo -->
-    <section class="plans">
+    <section class="plans" id="plans">
       <div class="container-sm">
+        <h2>Trova il piano business che fa per te</h2>
+        
+        <div class="payment-options">
+          <input type="radio" name="plan" id="month">
+          <label for="month">Fatturazione mensile</label>
+          <input type="radio" name="plan" id="year">
+          <label for="year">Fatturazione Annuale</label>
+        </div>
+
         <div class="row pt-2">
-          <div class="col-4"></div>
-          <div class="col-4"></div>
-          <div class="col-4"></div>
-          <div class="col-12"></div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-header">
+                <i class="fas fa-user fa-sm fa-fw"></i> Singolo
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+          
+                <h3>Professional</h3>
+                <div class="price">
+                  <strong>€ 12,00</strong><br>
+                  <span class="text-muted">/mese</span>
+                </div>
+          
+                <ul class="features list-unstyled">
+                  <li>
+                    <i class="fas fa-user"></i>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing.</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-user"></i>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing.</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-user"></i>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing.</span>
+                  </li>
+          
+                </ul>
+                <!-- /.features -->
+                <div class="call-to-action">
+                  <a href="#" class="btn btn-primary btn-block">
+                    Prova gratis per 30 giorni
+                  </a>
+                  <div class="py-2">
+                    oppure <a href="/">acquista ora</a>
+                  </div>
+                  <hr>
+                </div>
+                <!-- /.call-to-action -->
+                <ul class="caracteristics list-unstyled">
+                  <li>
+                    <i class="fas fa-check"></i>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing.</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing.</span>
+                  </li>
+          
+                </ul>
+          
+          
+              </div>
+              <!-- /.card-body -->
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-header">
+                <i class="fas fa-user fa-sm fa-fw"></i> Singolo
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+          
+                <h3>Professional</h3>
+                <div class="price">
+                  <strong>€ 12,00</strong><br>
+                  <span class="text-muted">/mese</span>
+                </div>
+          
+                <ul class="features list-unstyled">
+                  <li>
+                    <i class="fas fa-user"></i>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing.</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-user"></i>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing.</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-user"></i>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing.</span>
+                  </li>
+          
+                </ul>
+                <!-- /.features -->
+                <div class="call-to-action">
+                  <a href="#" class="btn btn-primary btn-block">
+                    Prova gratis per 30 giorni
+                  </a>
+                  <div class="py-2">
+                    oppure <a href="/">acquista ora</a>
+                  </div>
+                  <hr>
+                </div>
+                <!-- /.call-to-action -->
+                <ul class="caracteristics list-unstyled">
+                  <li>
+                    <i class="fas fa-check"></i>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing.</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing.</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing.</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing.</span>
+                  </li>
+          
+                </ul>
+          
+          
+              </div>
+              <!-- /.card-body -->
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <div class="card-header">
+                <i class="fas fa-user fa-sm fa-fw"></i> Singolo
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+          
+                <h3>Professional</h3>
+                <div class="price">
+                  <strong>€ 12,00</strong><br>
+                  <span class="text-muted">/mese</span>
+                </div>
+          
+                <ul class="features list-unstyled">
+                  <li>
+                    <i class="fas fa-user"></i>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing.</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-user"></i>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing.</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-user"></i>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing.</span>
+                  </li>
+          
+                </ul>
+                <!-- /.features -->
+                <div class="call-to-action">
+                  <a href="#" class="btn btn-primary btn-block">
+                    Prova gratis per 30 giorni
+                  </a>
+                  <div class="py-2">
+                    oppure <a href="/">acquista ora</a>
+                  </div>
+                  <hr>
+                </div>
+                <!-- /.call-to-action -->
+                <ul class="caracteristics list-unstyled">
+                  <li>
+                    <i class="fas fa-check"></i>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing.</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i>
+                    <span>Lorem ipsum, dolor sit amet consectetur adipisicing.</span>
+                  </li>
+          
+                </ul>
+          
+          
+              </div>
+              <!-- /.card-body -->
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header"></div>
+          
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -72,7 +302,111 @@
       </div>
     </section>
     <!-- /.operations -->
-    <section class="teams"></section>
+    <section class="teams">
+      <!-- Option 1 
+                                                                  <div class="row">
+                                                                    <div class="col-4">
+                                                                      <div class="row">
+                                                                        <div class="col-6">
+                                                                          <div class="team">
+                                                                            <img src="./assets/img/designit.svg" alt="">
+                                                                          </div>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                          <div class="team">
+                                                                            <img src="./assets/img/arizona_state_university.svg" alt="">
+                                                                          </div>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                          <div class="team">
+                                                                            <img src="./assets/img/university_of_florida.svg" alt="">
+                                                                          </div>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                          <div class="team">
+                                                                            <img src="./assets/img/topps.svg" alt="">
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="col-4">
+                                                                      <div class="content">
+                                                                        <img width="200" src="./assets/img/designit.svg" alt="">
+                                                                        <hr>
+                                                                        <p>
+                                                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, architecto facilis ex aspernatur sint culpa
+                                                                          hic animi quae, consequatur nobis optio voluptates! Tempore dolor quia necessitatibus culpa, at voluptatem
+                                                                          repudiandae.
+                                                                        </p>
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="col-4">
+                                                                      <div class="row">
+                                                                        <div class="col-6">
+                                                                          <div class="team">
+                                                                            <img src="./assets/img/world_bicycle_relief.svg" alt="">
+                                                                          </div>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                          <div class="team">
+                                                                            <img src="./assets/img/hearst_corp.svg" alt="">
+                                                                          </div>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                          <div class="team">
+                                                                            <img src="./assets/img/lonely_planet.svg" alt="">
+                                                                          </div>
+                                                                        </div>
+                                                                        <div class="col-6">
+                                                                          <div class="team">
+                                                                            <img src="./assets/img/clear_channel.svg" alt="">
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>-->
+      <!-- Option 2 -->
+      <div class="d-flex">
+        <div class="left">
+          <div class="item active">
+            <img src="./assets/img/arizona_state_university.svg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/arizona_state_university.svg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/arizona_state_university.svg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/arizona_state_university.svg" alt="">
+          </div>
+    
+        </div>
+        <!-- /.left -->
+        <div class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit fugiat, quisquam, eveniet
+          itaque
+          obcaecati deleniti eius
+          beatae porro iste vel facilis nemo libero cupiditate accusantium asperiores in id doloremque ut?</div>
+        <!-- /.center -->
+        <div class="right">
+          <div class="item">
+            <img src="./assets/img/arizona_state_university.svg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/arizona_state_university.svg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/arizona_state_university.svg" alt="">
+          </div>
+          <div class="item">
+            <img src="./assets/img/arizona_state_university.svg" alt="">
+          </div>
+    
+        </div>
+        <!-- /.right -->
+      </div>
+    
+    </section>
     <!-- /.teams -->
     <section class="call-to-action">
       <div class="container-sm">
@@ -83,8 +417,64 @@
       </div>
     </section>
     <!-- /.call-to-action -->
-    <section class="faq">
-      <div class="container-sm"></div>
+    <section class="faqs">
+      <div class="container-sm">
+        <div class="faq">
+          <div class="question d-flex content-between">
+            <h3>Lorem, ipsum</h3>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="answer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sit numquam deserunt, asperiores sequi iure
+            autem
+            nihil debitis, quaerat doloribus, illum aspernatur hic facilis eligendi nemo labore iste repellendus unde.
+          </div>
+        </div>
+        <div class="faq">
+          <div class="question d-flex content-between">
+            <h3>Lorem, ipsum</h3>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="answer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sit numquam deserunt, asperiores sequi iure
+            autem
+            nihil debitis, quaerat doloribus, illum aspernatur hic facilis eligendi nemo labore iste repellendus unde.
+          </div>
+        </div>
+        <div class="faq">
+          <div class="question d-flex content-between">
+            <h3>Lorem, ipsum</h3>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="answer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sit numquam deserunt, asperiores sequi iure
+            autem
+            nihil debitis, quaerat doloribus, illum aspernatur hic facilis eligendi nemo labore iste repellendus unde.
+          </div>
+        </div>
+        <div class="faq">
+          <div class="question d-flex content-between">
+            <h3>Lorem, ipsum</h3>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="answer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sit numquam deserunt, asperiores sequi iure
+            autem
+            nihil debitis, quaerat doloribus, illum aspernatur hic facilis eligendi nemo labore iste repellendus unde.
+          </div>
+        </div>
+        <div class="faq">
+          <div class="question d-flex content-between">
+            <h3>Lorem, ipsum</h3>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="answer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sit numquam deserunt, asperiores sequi iure
+            autem
+            nihil debitis, quaerat doloribus, illum aspernatur hic facilis eligendi nemo labore iste repellendus unde.
+          </div>
+        </div>
+      </div>
     </section>
     <!-- /.faq -->
   </main>

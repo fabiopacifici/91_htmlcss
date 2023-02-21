@@ -1,0 +1,160 @@
+/* Common */
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root
+{
+
+  --primary: rgba(151, 146, 228, 1);
+  --secondary: rgba(0, 133, 252, 1);
+  --light: rgba(254, 255, 254, 1);
+  --dark: rgba(50, 51, 50, 1);
+
+}
+
+section,
+.demo
+{
+  padding: 2rem 0;
+}
+
+/* Debug */
+.debug header
+{
+  height: 70px;
+}
+
+.debug [class^="col_"]
+{
+  height: 300px;
+  border: 1px dashed;
+}
+
+.debug .section_heading,
+.testimonial
+{
+  height: 140px;
+  background-color: gray;
+}
+
+.debug footer
+{
+  height: 150px;
+}
+
+/* #region Utilities */
+
+/* Display */
+.d_flex
+{
+  display: flex;
+}
+
+/* Laout */
+.container
+{
+  width: 80%;
+  max-width: 1152px;
+  margin: auto;
+}
+
+.row
+{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+[class^="col_"]
+{
+  padding: 0 1rem;
+}
+
+.col_12
+{
+  width: 100%;
+}
+
+/* #endregion Utilities */
+
+/* Header */
+
+#site_header
+{
+  background-color: var(--secondary);
+}
+
+/* Main */
+
+/* Planning */
+
+.planning,
+.benefits
+{
+  background-color: var(--primary);
+}
+
+/* Testimonials */
+
+.testimonial
+{
+  margin: 1rem 0;
+}
+
+/* Benefits */
+
+/* Call To Action */
+
+.call_to_action
+{
+  background-color: var(--primary);
+}
+
+/* Site Footer */
+
+#site_footer
+{
+  background-color: var(--dark);
+}
+
+/* #region Responsive Layout */
+@media screen and (min-width: 768px)
+{
+
+  .col_md_4
+  {
+    width: calc(100% / 12 * 4);
+  }
+
+  .col_md_6
+  {
+    width: 50%;
+  }
+
+  .col_md_8
+  {
+    width: calc(100% / 12 * 8);
+  }
+
+}
+
+@media screen and (min-width: 1200px)
+{
+
+  .col_lg_4
+  {
+    width: calc(100% / 12 * 4);
+  }
+
+  .col_lg_6
+  {
+    width: 50%;
+  }
+
+}
+
+/* #endregion Responsive Layout */
