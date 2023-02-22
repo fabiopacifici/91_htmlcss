@@ -11,6 +11,7 @@
 
   --primary: rgba(151, 146, 228, 1);
   --secondary: rgba(0, 133, 252, 1);
+  --secondary-soft: #b5ddff;
   --light: rgba(254, 255, 254, 1);
   --dark: rgba(50, 51, 50, 1);
 
@@ -20,6 +21,22 @@ section,
 .demo
 {
   padding: 2rem 0;
+}
+
+a
+{
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+p
+{
+  line-height: 1.5rem;
+}
+
+img
+{
+  max-width: 100%;
 }
 
 /* Debug */
@@ -54,7 +71,7 @@ section,
   display: flex;
 }
 
-/* Laout */
+/* Layout */
 .container
 {
   width: 80%;
@@ -66,17 +83,67 @@ section,
 {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -1rem;
+  margin: 0 -0.5rem;
 }
 
 [class^="col_"]
 {
-  padding: 0 1rem;
+  padding: 0.5rem;
 }
 
 .col_12
 {
   width: 100%;
+}
+
+/* Typography */
+.list_unstyled
+{
+  list-style: none;
+}
+
+.text_center
+{
+  text-align: center;
+}
+
+/* buttons */
+.btn
+{
+  background-color: transparent;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+
+}
+
+.btn_light
+{
+  background-color: var(--light);
+  color: var(--dark) !important;
+}
+
+.btn_secondary
+{
+  background-color: var(--secondary);
+  color: var(--light) !important;
+}
+
+/* colors */
+.text_ligth
+{
+  color: var(--light)
+}
+
+/* Spacings */
+.mb_2
+{
+  margin-bottom: 2rem;
+}
+
+.pb_0
+{
+  padding-bottom: 0;
 }
 
 /* #endregion Utilities */
@@ -88,7 +155,63 @@ section,
   background-color: var(--secondary);
 }
 
-/* Main */
+#site_header nav
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.main_menu ul
+{
+  display: none;
+}
+
+.main_menu a
+{
+  color: var(--light)
+}
+
+/* #region Main */
+
+/* Demo */
+.demo .card
+{
+  background-color: var(--secondary-soft);
+  height: 100%;
+  border-radius: 1rem;
+
+}
+
+.demo h3
+{
+  color: var(--secondary);
+  padding: 1rem 0;
+}
+
+.demo .icon
+{
+  color: var(--secondary)
+}
+
+.demo .card_body
+{
+  padding: 1rem;
+}
+
+.demo img
+{
+  width: 200px;
+}
+
+.demo .image_wrapper
+{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+
+}
 
 /* Planning */
 
@@ -114,6 +237,7 @@ section,
   background-color: var(--primary);
 }
 
+/* #endregion Main */
 /* Site Footer */
 
 #site_footer
@@ -153,6 +277,17 @@ section,
   .col_lg_6
   {
     width: 50%;
+  }
+
+  .mobile_toggle
+  {
+    display: none;
+
+  }
+
+  .main_menu ul
+  {
+    display: flex;
   }
 
 }
