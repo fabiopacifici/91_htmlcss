@@ -6,54 +6,231 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spotify</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css'
+    integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=='
+    crossorigin='anonymous' referrerpolicy='no-referrer' />
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;900&display=swap' rel='stylesheet'>
+  <link rel="stylesheet" href="./framework.css">
   <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="debug">
+<body class="">
 
 
   <div class="top">
     <div class="sidebar d-flex direction-column">
-      <div class="sidebar_top"></div>
-      <div class="sidebar_bottom"></div>
+      <div class="sidebar_top">
+        <div class="logo">
+          <img height="40" src="./img/logo-small.svg" alt="" class="mobile">
+          <img height="40" src="./img/logo.svg" alt="" class="desktop">
+        </div>
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a href="#" class="active">
+                <img src="./img/home.svg" alt="">
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./img/search.svg" alt="">
+                <span>Cerca</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./img/libreria.svg" alt="">
+                <span>La tua Libreria</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <section class="playlists">
+          <h3>Playlist</h3>
+          <div class="add">
+            <span class="icon">
+              <i class="fas fa-plus fa-lg fa-fw"></i>
+            </span>
+            <span> Crea Playlist</span>
+          </div>
+          <ul>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+          </ul>
+        </section>
+      </div>
+      <div class="sidebar_bottom bg-primary">
+        <div class="download">
+          <img height="22" src="./img/download.svg" alt="">
+          <span>Installa App</span>
+        </div>
+        <hr>
+        <div class="profile">
+          <span class="profile_image">
+            <img width="22" src="./img/profile.svg" alt="">
+          </span>
+          <strong>John Doe</strong>
+        </div>
+      </div>
     </div>
     <main class="content">
 
+      <div class="banner">
+        <a href="#" class="btn btn-outline">Effettua l'Upgrade</a>
+      </div>
+
+      <nav class="category_nav">
+        <a href="#" class="active">
+          In evidenza
+        </a>
+        <a href="#">Podcast</a>
+        <a href="#">Classifiche</a>
+        <a href="#">Generi e Mood</a>
+        <a href="#">Nuove Uscite</a>
+        <a href="#">Scopri</a>
+
+
+      </nav>
       <section class="container">
-        <h2>Lorem, ipsum</h2>
+        <hgroup>
+          <h2>Lorem, ipsum</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, et.</p>
+        </hgroup>
         <div class="row">
-          <div class="col-12 col-sm-6 col-md-3 col-lg-2"></div>
-          <div class="col-12 col-sm-6 col-md-3 col-lg-2"></div>
-          <div class="col-12 col-sm-6 col-md-3 col-lg-2"></div>
-          <div class="col-12 col-sm-6 col-md-3 col-lg-2"></div>
-          <div class="col-12 col-sm-6 col-md-3 col-lg-2"></div>
-          <div class="col-12 col-sm-6 col-md-3 col-lg-2"></div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+            <div class="album">
+              <img src="./img/metal_lifting.jpg" alt="">
+              <h3>Heavy Metal</h3>
+              <h5>Sub title</h5>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+            <div class="album">
+              <img src="./img/metal_lifting.jpg" alt="">
+              <h3>Heavy Metal</h3>
+              <h5>Sub title</h5>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+            <div class="album">
+              <img src="./img/metal_lifting.jpg" alt="">
+              <h3>Heavy Metal</h3>
+              <h5>Sub title</h5>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+            <div class="album">
+              <img src="./img/metal_lifting.jpg" alt="">
+              <h3>Heavy Metal</h3>
+              <h5>Sub title</h5>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+            <div class="album">
+              <img src="./img/metal_lifting.jpg" alt="">
+              <h3>Heavy Metal</h3>
+              <h5>Sub title</h5>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+            <div class="album">
+              <img src="./img/metal_lifting.jpg" alt="">
+              <h3>Heavy Metal</h3>
+              <h5>Sub title</h5>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="container">
-        <h2>Lorem, ipsum</h2>
+        <hgroup>
+          <h2>Lorem, ipsum</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, et.</p>
+        </hgroup>
         <div class="row">
-          <div class="col-12 col-sm-6 col-md-3 col-lg-2"></div>
-          <div class="col-12 col-sm-6 col-md-3 col-lg-2"></div>
-          <div class="col-12 col-sm-6 col-md-3 col-lg-2"></div>
-          <div class="col-12 col-sm-6 col-md-3 col-lg-2"></div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+            <div class="album">
+              <img class="img-fluid" src="./img/metal_lifting.jpg" alt="">
+              <h3>Heavy Metal</h3>
+              <h5>Sub title</h5>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+            <div class="album">
+              <img src="./img/metal_lifting.jpg" alt="">
+              <h3>Heavy Metal</h3>
+              <h5>Sub title</h5>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+            <div class="album">
+              <img src="./img/metal_lifting.jpg" alt="">
+              <h3>Heavy Metal</h3>
+              <h5>Sub title</h5>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+            <div class="album">
+              <img src="./img/metal_lifting.jpg" alt="">
+              <h3>Heavy Metal</h3>
+              <h5>Sub title</h5>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="container">
-        <h2>Lorem, ipsum</h2>
+      <section id="for_you" class="container">
+        <hgroup>
+          <h2>Lorem, ipsum</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, et.</p>
+        </hgroup>
         <div class="row">
-          <div class="col-12 col-sm-6 col-md-3 col-lg-2"></div>
-          <div class="col-12 col-sm-6 col-md-3 col-lg-2"></div>
-        
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+            <div class="album">
+              <img src="./img/metal_lifting.jpg" alt="">
+              <h3>Heavy Metal</h3>
+              <h5>Sub title</h5>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+            <div class="album">
+              <img src="./img/metal_lifting.jpg" alt="">
+              <h3>Heavy Metal</h3>
+              <h5>Sub title</h5>
+            </div>
+          </div>
+
         </div>
       </section>
 
 
     </main>
   </div>
-  <footer class="bottom"></footer>
+  <footer class="bottom d-flex justify-content-between align-center">
+    <div class="playing">
+      <div class="album_details d-flex">
+        <img height="60" class="img-fluid" src="./img/sinister.jpeg" alt="">
+        <div class="details_text d-flex flex-col">
+          <strong>Sinister</strong>
+          <span>Nome canzone</span>
+        </div>
+      </div>
+      <!-- /.album_details -->
+      <div class="album_actions"></div>
+      <!-- /.album_actions -->
+    </div>
+    <div class="player">center</div>
+    <div class="audio">rigth</div>
+  </footer>
 
 </body>
 
