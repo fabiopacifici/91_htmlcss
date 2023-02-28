@@ -1,0 +1,60 @@
+:root {
+    --free-dark-soft: rgba(59, 85, 109, 1);
+    --free-primary: rgba(26, 189, 157, 1);
+    --free-dark: rgba(44, 62, 80, 1);
+}
+
+/* #region debug */
+.debug [class^="col"] {
+    height: 200px;
+    border: 1px dashed;
+}
+
+.debug header {
+    height: 70px;
+}
+.debug .jumbotron {
+height: 450px;
+
+}
+.debug footer {
+    height: 300px;
+}
+.debug .contacts {
+    height: 400px;
+}
+/* #endregion debug */
+
+/* #region Utilities */
+.bg_free_dark {
+    background-color: var(--free-dark);
+}
+/* #endregion Utilitis */
+/* #region header */
+/* #site_header {
+    background-color: var(--free-dark);
+} */
+
+
+/* #endregion header */
+
+
+/* #region Main */
+
+.jumbotron {
+    background-color: var(--free-primary);
+}
+
+
+.about {
+    background-color: var(--free-primary);
+}
+
+/* #endregion Main */
+
+
+/* #region Footer */
+footer {
+    background-color: var(--free-dark-soft);
+}
+/* #endregion Footer */
