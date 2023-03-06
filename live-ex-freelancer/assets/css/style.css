@@ -1,60 +1,129 @@
-:root {
+:root
+{
     --free-dark-soft: rgba(59, 85, 109, 1);
     --free-primary: rgba(26, 189, 157, 1);
     --free-dark: rgba(44, 62, 80, 1);
+    --free-light: white;
 }
 
 /* #region debug */
-.debug [class^="col"] {
+.debug [class^="col"]
+{
     height: 200px;
     border: 1px dashed;
 }
 
-.debug header {
+.debug header
+{
     height: 70px;
 }
-.debug .jumbotron {
-height: 450px;
+
+.debug .jumbotron
+{
+    height: 450px;
 
 }
-.debug footer {
+
+.debug footer
+{
     height: 300px;
 }
-.debug .contacts {
+
+.debug .contacts
+{
     height: 400px;
 }
+
 /* #endregion debug */
 
 /* #region Utilities */
-.bg_free_dark {
+.bg_free_dark
+{
     background-color: var(--free-dark);
+}
+.bg_free_primary {
+    background-color: var(--free-primary);
 }
 /* #endregion Utilitis */
 /* #region header */
-/* #site_header {
-    background-color: var(--free-dark);
-} */
 
+/* #site_header a {
+    text-transform: uppercase;
+} */
 
 /* #endregion header */
 
-
 /* #region Main */
 
-.jumbotron {
-    background-color: var(--free-primary);
+.star
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
+.star::before,
+.star::after
+{
+    content: '';
+    display: block;
+    width: 8rem;
+    height: 3px;
+}
 
-.about {
+.jumbotron
+{
     background-color: var(--free-primary);
+    color: var(--free-light);
+}
+
+.jumbotron .star::before,
+.jumbotron .star::after,
+.about .star::before,
+.about .star::after
+{
+    background-color: var(--free-light);
+}
+
+.portfolio .star::before,
+.portfolio .star::after,
+.contacts .star::before,
+.contacts .star::after
+{
+    background-color: var(--free-dark);
+}
+
+.about
+{
+    background-color: var(--free-primary);
+    color: var(--free-light)
 }
 
 /* #endregion Main */
 
-
 /* #region Footer */
-footer {
+footer
+{
     background-color: var(--free-dark-soft);
 }
+
+footer h4 {
+    margin-bottom: 1.5rem;
+}
+.social .icon {
+    width: 2rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px solid var(--free-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer .footer_bottom {
+    background-color: var(--free-dark);
+}
+
 /* #endregion Footer */
