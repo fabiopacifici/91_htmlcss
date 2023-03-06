@@ -1,0 +1,55 @@
+.debug header
+{
+  background-color: red;
+}
+
+.debug .wrapper
+{
+  background-color: aquamarine;
+}
+.debug .banner {
+  height: 150px;
+}
+.debug [class^="col-"] {
+  height: 300px;
+  border: 1px dashed;
+}
+
+
+#app_header
+{
+  height: 70px;
+}
+
+.wrapper
+{
+  display: flex;
+  height: calc(100vh - 70px);
+}
+
+.sidebar
+{
+  width: 5rem;
+}
+
+main
+{
+  width: calc(100% - 5rem);
+  overflow-y: auto;
+}
+.banner {
+  background-color: var(--bs-blue);
+}
+
+@media screen and (min-width: 992px)
+{
+  .sidebar
+  {
+    width: 10rem;
+  }
+
+  main
+  {
+    width: calc(100% - 10rem);
+  }
+}
