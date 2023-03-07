@@ -1,0 +1,165 @@
+/*-----------------------
+    VARIABLES
+------------------------*/
+:root {
+  --ms-gray-color: #e5e5e5;
+  --ms-gray-color-light: #f8f9fa;
+  --ms-gray-color-dark: #5b5858;
+
+  --ms-primary-color: #1b72e8;
+  --ms-primary-color-dark: #051e34;
+
+  --ms-accent-color: #ff8f00;
+}
+
+/*-----------------------
+    UTILITIES
+------------------------*/
+.ms-bg-color-gray {
+  background-color: var(--ms-gray-color);
+}
+.ms-bg-color-gray-light {
+  background-color: var(--ms-gray-color-light);
+}
+.ms-bg-color-gray-dark {
+  background-color: var(--ms-gray-color-dark);
+}
+.ms-bg-primary-color {
+  background-color: var(--ms-primary-color);
+}
+.ms-bg-primary-color-dark {
+  background-color: var(--ms-primary-color-dark);
+}
+.ms-text-gray-dark {
+  color: var(--ms-gray-color-dark);
+}
+.ms-text-accent {
+  color: var(--ms-accent-color);
+}
+.ms-list-reset {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+/*-----------------------
+    COMMONS
+------------------------*/
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+}
+
+header {
+  height: 4.375rem;
+}
+.ms-page-wrapper {
+  height: calc(100% - 4.375rem);
+  display: flex;
+}
+.ms-sidebar {
+  background-image: url('../img/sidebar-bg.png');
+  flex-shrink: 0;
+  height: 100%;
+}
+@media screen and (min-width: 992px) {
+  .ms-sidebar {
+    width: 9.375rem;
+  }
+}
+main {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+/*-----------------------
+    COMPONENTS
+------------------------*/
+/* Logo */
+.ms-logo {
+  max-height: 3.125rem;
+}
+/* Search Bar */
+.ms-search-bar {
+  display: flex;
+  align-items: center;
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+}
+.ms-search-bar__icon {
+  padding-right: 0.5rem;
+}
+.ms-search-bar__input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.ms-search-bar__input::placeholder {
+  font-size: 0.875rem;
+}
+/* Top Bar Menu */
+.ms-topbar-menu__list {
+  display: flex;
+  align-items: center;
+}
+.ms-topbar-menu__list > *:not(:last-child) {
+  margin-right: 1.5rem;
+}
+/* Main Menu */
+.ms-main-menu {
+  color: #fff;
+}
+.ms-main-menu__item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background 0.1s linear;
+}
+.ms-main-menu__item:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.ms-main-menu__item > i {
+  font-size: 1.1rem;
+  width: 1.25rem;
+}
+/* Badge */
+.ms-badge {
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 400;
+  background: rgba(0, 0, 0, 0.2);
+  transition: background 0.1s linear;
+}
+.ms-badge:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+/* Table */
+.ms-table img,
+.ms-table td button {
+  width: 1.875rem;
+}
+.ms-table th:nth-child(1),
+.ms-table td:nth-child(1) {
+  width: auto;
+}
+.ms-table th:not(:nth-child(1)),
+.ms-table td:not(:nth-child(1)) {
+  width: 6.25rem;
+  text-align: center;
+}
+
+#offcanvasStudent {
+  width: 100%;
+  /* Possiamo anche mostrare come sovrascrivere le custom properties
+        definite da Bootstrap: */
+  /* --bs-offcanvas-width: 100%; */
+}
+
+@media (min-width: 1200px) {
+  #offcanvasStudent {
+    width: 800px;
+    /* --bs-offcanvas-width: 800px; */
+  }
+}
